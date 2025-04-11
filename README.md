@@ -1,4 +1,4 @@
-# Název projektu: Objev Prahu
+# Název projektu: Poznej Prahu
 
 ## Popis webu
 
