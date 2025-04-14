@@ -21,5 +21,5 @@ Cestovatelský / městský průvodce zaměřený na autentická místa v Praze.
 
 ## Odkazy
 
-- 🔗 **Návrh ve Figmě:** [Zobrazit plátno ve Figmě]()
-- 🌐 **GitHub Pages (živý náhled):** [Zobrazit web]()
+- 🔗 **Návrh ve Figmě:** [Zobrazit plátno ve Figmě](https://www.figma.com/design/9tF4btDCmMb14AIZB5dsj6/JezberaJakub?node-id=68-2&t=5ObrudRjSZB0jmft-1)
+- 🌐 **GitHub Pages:** [Zobrazit web]()
