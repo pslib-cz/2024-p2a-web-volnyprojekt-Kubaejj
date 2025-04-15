@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "lightgallery": "^2.8.3"
   }
 }
-
