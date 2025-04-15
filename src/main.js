@@ -1,32 +1,46 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './main.css';
+import './infopoint.css';
 import 'lightgallery/css/lightgallery.css';
-import lightGallery from 'lightgallery';
-lightGallery(document.getElementById('lightgallery'), {
-  plugins: [lgThumbnail],
-  speed: 500,
+import 'lightgallery/css/lg-thumbnail.css';
+
+import myGallery from 'lightgallery';
+
+// Plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail'
+import lgZoom from 'lightgallery/plugins/zoom'
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  modules: [Navigation, Pagination],
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
 });
 
 
+myGallery(document.querySelector(".thumbnails"), {
+  plugins: [lgZoom, lgThumbnail],
+ selector: '.picture__link',
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+});
 
-setupCounter(document.querySelector('#counter'))
+
