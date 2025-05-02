@@ -35,10 +35,15 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-myGallery(document.querySelector(".thumbnails"), {
+myGallery(document.querySelector(".gallery__list"), {
   plugins: [lgZoom, lgThumbnail],
  selector: '.picture__link',
 
 });
+
+import './style.css';
+import './hamburger.css';
+import  './fonts.css';
+import './icons.css';
 
 
