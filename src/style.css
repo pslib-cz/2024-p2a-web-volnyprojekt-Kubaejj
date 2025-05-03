@@ -82,6 +82,7 @@
     color: var(--gray, #3A3F45);
     transition: all 0.3s ease-in-out;
   }
+
   /* header */
   .header__row {
     padding: 10px 20px;
@@ -89,7 +90,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--gray, #3A3F45);
-}
+  }
 
 
 
@@ -102,7 +103,7 @@
     background-position: center;
     text-align: center;
   }
- 
+
 
   .hero__title {
     padding: 2rem;
@@ -126,12 +127,12 @@
 
 
   }
- 
-  @media  screen and (min-width: 1176px) {
-   .hero__title{
-    color: var(--white, #F0F0F0); 
-   }
-    
+
+  @media screen and (min-width: 1176px) {
+    .hero__title {
+      color: var(--white, #F0F0F0);
+    }
+
   }
 
   /* places */
@@ -203,15 +204,16 @@
     align-items: center;
     width: 100%;
   }
+
   .form__input {
-   height: 39px;
+    height: 39px;
     width: 100%;
-    padding: 10px .5rem ;
+    padding: 10px .5rem;
     border-radius: 10px;
     border: 1px solid var(--gray);
     margin-bottom: .5rem;
   }
- 
+
 
   .form__input::placeholder {
     color: #3A3F45;
@@ -226,46 +228,52 @@
       gap: 20px;
 
     }
+
     .form__input {
 
       margin-bottom: 0px;
     }
   }
-/*social*/
-.social{
-  background-color: var(--gray, #3A3F45);
-  padding: 2em;
-  color: var(--white);
 
-}
-.icon{
-  font-size: 3.125rem;
-  color: var(--white, #F0F0F0);
-}
-.social-icons{
-  display: flex;
-  gap: .5em;
-  justify-content: center;
-  margin-top: .5rem;
-}
+  /*social*/
+  .social {
+    background-color: var(--gray, #3A3F45);
+    padding: 2em;
+    color: var(--white);
+
+  }
+
+  .icon {
+    font-size: 3.125rem;
+    color: var(--white, #F0F0F0);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+    margin-top: .5rem;
+  }
 
 
 
 
 
-/*gallery*/
+  /*gallery*/
   .gallery {
     padding: 2.5em;
     border-radius: 1rem;
 
   }
+
   .gallery__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 360px));
     justify-content: center;
     gap: .5em;
   }
-  .gallery__title{
+
+  .gallery__title {
     margin-bottom: .5rem;
   }
 
@@ -293,6 +301,29 @@
     text-align: end;
   }
 }
+
+/*topmista*/
+.main__hero {
+  margin: 1.25rem;
+}
+
+.hero__article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  justify-content: center;
+  gap: 1.5em;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.main__hero .hero__card {
+  padding: 1em;
+}
+
+.main__title {
+  margin-bottom: 1.5rem;
+}
+
 
 @layer animation {
   .hero__animation {
