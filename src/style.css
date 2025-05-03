@@ -13,7 +13,6 @@
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
   body {
@@ -57,7 +56,7 @@
 
   .image--responsive {
     width: 100%;
-    height: auto;
+    display: block;
 
   }
 
@@ -181,7 +180,7 @@
   }
 
   /* form*/
-  .form {
+  .form{
     padding: 20px 40px;
     max-width: 1160px;
     margin: 2.5rem auto;
@@ -202,16 +201,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
   }
 
   .form__input {
     height: 39px;
-    width: 100%;
-    padding: 10px .5rem;
     border-radius: 10px;
     border: 1px solid var(--gray);
     margin-bottom: .5rem;
+    box-sizing: border-box;
+    padding: 10px .5rem;
+    width: 100%;
   }
 
 
@@ -288,24 +287,26 @@
   .footer {
     background-color: var(--gray, #3A3F45);
     color: var(--white, #F0F0F0);
-    padding: 10px 20px;
+    padding: .5rem 1rem ;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 
   .footer__text {
     font-size: var(--p);
     font-family: Roboto, sans-serif;
-    margin: 0;
-    text-align: end;
+    text-align: end;line-height: 1.2;
   }
 }
 
 /*topmista*/
 .main__hero {
   margin: 1.25rem;
+  text-align: center;
 }
+
 
 .hero__article {
   display: grid;
@@ -314,6 +315,7 @@
   gap: 1.5em;
   max-width: 1248px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .main__hero .hero__card {
@@ -324,6 +326,11 @@
   margin-bottom: 1.5rem;
 }
 
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 
 @layer animation {
   .hero__animation {
