@@ -41,11 +41,11 @@ myGallery(document.querySelector(".gallery__list"), {
 
 });
 
-import './styles/normalize.css';
-import './styles/fonts.css';
-import './styles/icons.css';
-import './styles/hamburger.css';
-import './styles/style.css';
+import '../styles/normalize.css';
+import '../styles/fonts.css';
+import '../styles/icons.css';
+import '../styles/hamburger.css';
+import '../styles/style.css';
 
 
 
