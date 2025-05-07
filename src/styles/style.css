@@ -23,12 +23,14 @@
     flex-direction: column;
     min-height: 100vh;
   }
+
   .main {
 
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
   }
+
   a {
     text-decoration: none;
     color: var(--gray);
@@ -390,7 +392,7 @@
 
   .hero__article:has(.hero__card:hover) .hero__card:not(:hover) .hero__img {
     filter: blur(3px);
-    transition: filter 0.3s ease ;
+    transition: filter 0.3s ease;
   }
 
   .hero__article:has(.hero__card:hover) .hero__card:not(:hover) {
@@ -401,6 +403,64 @@
   .hero__card:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+  }
+
+  /*tips*/
+
+  .tips {
+    margin: 1rem 1.25rem;
+  }
+
+  .tips__article {
+    margin: 1em;
+    display: grid;
+    gap: 1.5em;
+  }
+
+  .tips__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .tips__text {
+    padding: 1em;
+    background-color: var(--gray, #3A3F45);
+    border-radius: 10px;
+    color: var(--white, #F0F0F0);
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .a--underline {
+    text-decoration: underline;
+    color: var(--white, #F0F0F0);
+  }
+
+  @media screen and (min-width: 840px) {
+    .tips__card {
+      grid-template-columns: 1fr 1fr;
+      padding: 1.5em;
+    }
+    .tips__card:nth-child(odd) .tips__text {
+      order: 2;
+    }
+    .tips__card {
+      outline: 3px solid var(--blue, #21449B);
+      border-radius: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .tips__article {
+      grid-template-columns: 1fr 1fr;
+      max-width: 1320px;
+      margin: 1em auto;
+
+    }
+
   }
 
 }
