@@ -73,6 +73,11 @@ html {
         right: 0;
     }
 
+    .header {
+        overflow-x: hidden;
+        position: relative;
+    }
+
     .header__nav {
         background-color: var(--gray, #3A3F45);
         color: var(--white, #F0F0F0);
