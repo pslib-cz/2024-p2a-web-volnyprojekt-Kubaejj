@@ -1,0 +1,11 @@
+const footstepDiv = document.getElementById('footsteps-container');
+const totalSteps = window.innerWidth / 40; // Počet obrázků
+
+for (let i = 0; i < totalSteps; i++) {
+  const img = document.createElement('img');
+  img.src = '/img/animation/footestep.svg';
+  img.className = 'footstep';
+  img.style.setProperty('--i', i);
+  img.alt = 'stopa';
+  footstepDiv.appendChild(img);
+}
