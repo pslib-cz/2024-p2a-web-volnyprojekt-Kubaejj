@@ -3,7 +3,7 @@ const totalSteps = window.innerWidth / 40; // Počet obrázků
 
 for (let i = 0; i < totalSteps; i++) {
   const img = document.createElement('img');
-  img.src = '/img/animation/footestep.svg';
+  img.src = '/img/animation/footstep.svg';
   img.className = 'footstep';
   img.style.setProperty('--i', i);
   img.alt = 'stopa';

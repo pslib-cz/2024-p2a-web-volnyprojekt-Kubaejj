@@ -444,9 +444,11 @@
       grid-template-columns: 1fr 1fr;
       padding: 1.5em;
     }
+
     .tips__card:nth-child(odd) .tips__text {
       order: 2;
     }
+
     .tips__card {
       outline: 3px solid var(--blue, #21449B);
       border-radius: 1rem;
@@ -462,6 +464,95 @@
     }
 
   }
+
+  /*eateries*/
+  .eateries {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    max-width: 1000px;
+    margin: 1rem auto;
+
+  }
+
+  .eateries__img {
+    max-width: 1000px;
+  }
+
+  .eateries__map-link {
+    align-self: center;
+  }
+
+  .eateries__info {
+    display: grid;
+    gap: 2.5em;
+    margin: 1em 1.25em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  @media screen and (min-width: 840px) {
+    .eateries__info {
+      grid-template-columns: 1fr 1fr;
+    }
+    .eateries__heading, .eateries__reviews-container{
+      grid-column: span 2;
+    }
+    .eateries__contact{
+      grid-row: span 2;
+    }
+
+    
+  }
+
+  .eateries__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .eateries__map {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+  }
+
+  .eateries__opening-item,
+  .eateries__contact-item {
+    margin-bottom: 0.5em;
+  }
+
+  .eateries__review-name {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .eateries__review {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 280px;
+  }
+
+  .eateries__review-points-image {
+    width: 30px;
+    margin-right: 0.25em;
+  }
+
+ 
+
+  .eateries__reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: center;
+
+  }
+  
+
+
+
+
 
 }
 
