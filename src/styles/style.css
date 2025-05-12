@@ -15,10 +15,12 @@
     padding: 0;
   }
 
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+
   .body {
     color: var(--gray);
-    font-family: "Poppins", sans-serif;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -393,7 +395,7 @@
     padding: 1em;
   }
 
- 
+
   .hero__card {
     display: flex;
     flex-direction: column;
