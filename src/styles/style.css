@@ -185,6 +185,16 @@
     }
   }
 
+  .places__container:has(.places__card:hover) .places__card:not(:hover) .card__image {
+    filter: blur(3px);
+    transition: filter 0.3s ease;
+  }
+
+  .places__container:has(.places__card:hover) .places__card:not(:hover) {
+    filter: blur(3px);
+    transition: filter 0.3s ease 1s;
+  }
+
 
 
   .places__card:hover {
@@ -366,6 +376,9 @@
   }
 
 
+
+
+
   .hero__article {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
@@ -380,28 +393,18 @@
     padding: 1em;
   }
 
-  .main__title {
-    margin-bottom: 1.5rem;
-  }
-
+ 
   .hero__card {
     display: flex;
     flex-direction: column;
     gap: .5rem;
   }
 
-  .hero__article:has(.hero__card:hover) .hero__card:not(:hover) .hero__img {
-    filter: blur(3px);
-    transition: filter 0.3s ease;
-  }
 
-  .hero__article:has(.hero__card:hover) .hero__card:not(:hover) {
-    filter: blur(3px);
-    transition: filter 0.3s ease 1s;
-  }
 
   .hero__card:hover {
     transform: scale(1.05);
+
     transition: all 0.3s ease-in-out;
   }
 
@@ -490,18 +493,22 @@
     grid-template-columns: 1fr;
     justify-content: center;
   }
+
   @media screen and (min-width: 840px) {
     .eateries__info {
       grid-template-columns: 1fr 1fr;
     }
-    .eateries__heading, .eateries__reviews-container{
+
+    .eateries__heading,
+    .eateries__reviews-container {
       grid-column: span 2;
     }
-    .eateries__contact{
+
+    .eateries__contact {
       grid-row: span 2;
     }
 
-    
+
   }
 
   .eateries__card {
@@ -539,7 +546,7 @@
     margin-right: 0.25em;
   }
 
- 
+
 
   .eateries__reviews {
     display: flex;
@@ -548,7 +555,7 @@
     justify-content: center;
 
   }
-  
+
 
 
 
