@@ -1,4 +1,9 @@
 @layer reset, layout, animation;
+@import url(./normalize.css);
+@import url(./fonts.css);
+@import url(./icons.css);
+@import url(./hamburger.css);
+
 
 @layer reset {
   :root {
@@ -9,6 +14,7 @@
     --h1: 40px;
     --h2: 24px;
   }
+
 
   * {
     margin: 0;
@@ -243,7 +249,6 @@
     display: flex;
     flex-direction: column;
     gap: .5em;
-
   }
 
   .form__container {
@@ -322,7 +327,7 @@
 
   /*gallery*/
   .gallery {
-    padding: 2.5em;
+    padding: 2em 2.5em ;
     border-radius: 1rem;
 
   }
@@ -372,16 +377,15 @@
 
 
   /*topmista*/
-  .main__hero {
+  .main__hero, .traps {
     margin: 1.25rem;
     text-align: center;
   }
-
-
-
-
-
-  .hero__article {
+  .traps{
+    margin: 2.5rem auto ;
+    padding:2rem 2.5rem;
+  }
+  .hero__article, .traps__article {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
     justify-content: center;
@@ -391,12 +395,12 @@
     text-align: left;
   }
 
-  .main__hero .hero__card {
+  .main__hero .hero__card, .traps .traps__card {
     padding: 1em;
   }
 
 
-  .hero__card {
+  .hero__card, .traps__card {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -404,7 +408,7 @@
 
 
 
-  .hero__card:hover {
+  .hero__card:hover, .traps__card:hover {
     transform: scale(1.05);
 
     transition: all 0.3s ease-in-out;
@@ -476,8 +480,8 @@
     flex-direction: column;
     gap: 1.5em;
     max-width: 1000px;
-    margin: 1rem auto;
-
+    margin: 0 auto;
+    padding: 1em 1.25em;
   }
 
   .eateries__img {

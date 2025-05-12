@@ -40,11 +40,11 @@ myGallery(document.querySelector(".gallery__list"), {
  selector: '.picture__link',
 
 });
-
+/*
 import '../styles/normalize.css';
 import '../styles/fonts.css';
 import '../styles/icons.css';
-import '../styles/hamburger.css';
+import '../styles/hamburger.css';*/
 import '../styles/style.css';
 
 
