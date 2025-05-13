@@ -11,12 +11,12 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
         rel="stylesheet">
 
-    <title>Kde se najíst | PoznejPrahu</title>
+    <title>Světozor | PoznejPrahu</title>
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/assets/hamburger-DXwj1zZd.js"></script>
-  <script type="module" crossorigin src="/assets/main-BdZepyV5.js"></script>
+  <script type="module" crossorigin src="/assets/main-DlgrKawW.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/main-CAyO3GjU.css">
-  <link rel="stylesheet" crossorigin href="/assets/style-2vuCAqbv.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-Bxj1dv_X.css">
 </head>
 
 <body class="body">
@@ -33,20 +33,49 @@
         </div>
         <nav class="header__nav nav">
             <ul class="nav__list">
-                <li class="nav__li"> <a class="nav__item text--p" href="#"> Co navštívít </a></li>
-                <li class="nav__li"><a class="nav__item text--p" href="../turistickepasti/index.html">Turistické
-                        Pasti</a></li>
-                <li class="nav__li"><a class="nav__item text--p" href="./index.html">Top místa kde...</a></li>
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best" href="./index.html">Top
+                        místa kde...</a>
+                    <div class="dropdown">
+                        <a class="dropdown__item" href="./obecnerady.html">Obecné rady</a>
+                        <a class="dropdown__item" href="./kdesenajist.html">Kde se v centru levně a dobře najíst</a>
+                        <a class="dropdown__item" href="./pivnice.html">Nejslavnější pražské pivnice</a>
+                        <a class="dropdown__item" href="./kavarny.html">Nejhezčí pražské kavárny </a>
+                        <a class="dropdown__item" href="./kebab.html">Nejlepší kebab co v Praze najdete</a>
+                        <a class="dropdown__item" href="./burgery.html">Kam na burger?</a>
+                        <a class="dropdown__item" href="./veze.html">Nejhezčí pohledy z věží</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav__list">
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best" href="#"> Co navštívít </a>
+
+                </li>
+            </ul>
+            <ul class="nav__list">
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best"
+                        href="../turistickepasti/index.html">Turistické
+                        Pasti</a>
+                    <div class="dropdown">
+                        <a class="dropdown__item" href="#">Ruličkáři</a>
+                        <a class="dropdown__item" href="#">Hop-on Hop-off autobusy</a>
+                        <a class="dropdown__item" href="#">Staropražská šunka</a>
+                    </div>
+                </li>
+
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="eateries">
             <h1 class="eateries__title text--center text--h2 text--bold">Jídelna Světozor</h1>
-
+              <a href="/img/jidlo/svetozor.webp" class="image__link">
             <img src="/img/jidlo/svetozor.jpeg"
                 alt="Jídelna Světozor z vnitřku, kde v pravé části obrázku je zeměkoule a vedle ní nápis SVĚTOZOR."
                 class="eateries__image image image--responsive">
+                </a>
 
             <a class="btn eateries__map-link" href="https://mapy.com/s/hakoforapa">Otevřít v mapách</a>
 
@@ -70,15 +99,14 @@
                     <p class="eateries__subheading text text--p text--bold">Kontakt</p>
                     <div class="eateries__contact-info">
                         <p class="eateries__contact-item text text--p">
-                            Adresa: <a href="https://mapy.com/s/hakoforapa" 
-                                 class="eateries__contact-link">Vodičkova 39</a>
+                            Adresa: <a href="https://mapy.com/s/hakoforapa" class="eateries__contact-link">Vodičkova
+                                39</a>
                         </p>
                         <p class="eateries__contact-item text text--p">
                             Telefon: <a href="tel:+420721594723" class="eateries__contact-link">+420 721 594 723</a>
                         </p>
                     </div>
-                    <iframe class="eateries__map" style="border:none" src="https://mapy.com/s/ladecotocu"
-                       ></iframe>
+                    <iframe class="eateries__map" style="border:none" src="https://mapy.com/s/ladecotocu"></iframe>
                 </article>
 
                 <article class="eateries__description eateries__card">
