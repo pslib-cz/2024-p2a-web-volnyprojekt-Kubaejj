@@ -1,9 +1,9 @@
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+//import Swiper from 'swiper';
+//import { Navigation, Pagination } from 'swiper/modules';
 // import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+//import 'swiper/css';
+//import 'swiper/css/navigation';
+//import 'swiper/css/pagination';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
@@ -14,7 +14,7 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail'
 import lgZoom from 'lightgallery/plugins/zoom'
 
 
-
+/*
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   modules: [Navigation, Pagination],
@@ -33,13 +33,25 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
 
 });
-
+*/
 
 myGallery(document.querySelector(".gallery__list"), {
   plugins: [lgZoom, lgThumbnail],
- selector: '.picture__link',
+  selector: '.picture__link',
+  mousewheel: true,
+  getCaptionFromTitleOrAlt: false,
+
+
 
 });
+myGallery(document.querySelector(".gallery__list--better"), {
+  plugins: [lgZoom, lgThumbnail],
+  selector: '.picture__link', thumbnail: true,
+  mousewheel: true,
+});
+
+
+
 /*
 import '../styles/normalize.css';
 import '../styles/fonts.css';

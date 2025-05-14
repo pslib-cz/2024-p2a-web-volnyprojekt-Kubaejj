@@ -1,9 +1,11 @@
-@layer reset, layout, animation;
+@layer reset, fonts, icons, layout, animation;
+
 @import url(./normalize.css) layer(reset);
-@import url(./fonts.css);
-@import url(./icons.css);
+@import url(./fonts.css) layer(fonts);
+@import url(./icons.css) layer(icons);
 @import url(./hamburger.css);
 @import url(./animation.css) layer(animation);
+
 
 @layer reset {
   :root {
@@ -19,10 +21,7 @@
     --background: light-dark(var(--white, #F0F0F0), var(--gray, #3A3F45));
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+
 
   html {
     font-family: "Poppins", sans-serif;
@@ -33,7 +32,8 @@
     background-color: var(--background);
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* aby byl footer dloe*/
+    min-height: 100vh;
+    /* aby byl footer dloe*/
   }
 
   .main {
@@ -388,62 +388,60 @@
     transition: all 0.3s ease-in-out;
   }
 
-  /*tips*/
+
+  /* tips */
+
   .tips {
-    margin: 1rem 1.25rem;
+    margin: 2rem auto;
+    padding: 0 2.5rem;
+    max-width: 1320px;
   }
 
   .tips__article {
-    margin: 1em;
     display: grid;
-    gap: 1.5em;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 2rem auto;
+    max-width: 1215px;
+
   }
 
   .tips__card {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    align-self:flex-start ;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .tips__card:hover {
+    transform: translateY(-1em);
   }
 
   .tips__text {
-    padding: 1em;
-    background-color: var(--gray, #3A3F45);
-    border-radius: 10px;
-    color: var(--white, #F0F0F0);
-    align-self: start;
+    padding: 2rem;
+    background-color: var(--background);
+    color: var(--color);
     display: flex;
     flex-direction: column;
     gap: 1em;
+    font-size: 1em;
   }
 
-  .a--underline {
-    text-decoration: underline;
-    color: var(--white, #F0F0F0);
+  .tips__img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    border-radius: 0 0 1em 1em;
   }
 
-  @media screen and (min-width: 840px) {
-    .tips__card {
-      grid-template-columns: 1fr 1fr;
-      padding: 1.5em;
-    }
 
-    .tips__card:nth-child(odd) .tips__text {
-      order: 2;
-    }
-
-    .tips__card {
-      outline: 3px solid var(--blue, #21449B);
-      border-radius: 1rem;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .tips__article {
-      grid-template-columns: 1fr 1fr;
-      max-width: 1320px;
-      margin: 1em auto;
-    }
-  }
 
   /*eateries*/
   .eateries {
