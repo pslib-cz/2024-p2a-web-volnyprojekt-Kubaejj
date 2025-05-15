@@ -118,7 +118,7 @@
     <div id="footsteps-container">
       <!-- animace stop pres js -->
     </div>
-    <section class="form">
+    <section class="form" id="form">
       <article class="form__container">
         <p class="text text--h2 text--bold text--center">Chcete odebírat novinky?</p>
         <form class="form__container--form">
@@ -210,20 +210,70 @@
 
 
   </main>
-
   <footer class="footer">
-    <img src="/img/LogoWhite.svg" alt="Logo" class="footer__logo">
-    <div class="footer__text">
-      <p class="footer__text">©2025 PoznejPrahu</p>
-      <p class="footer__text">Vyrobeno s láskou a pívem</p>
+    <div class="footer__container">
+      <section class="footer__section footer__section--promo">
+        <img src="/img/LogoWhite.svg" alt="Logo PoznejPrahu" class="footer__logo">
+
+        <div class="footer__social">
+          <p class="footer__social-title text text--bold text--p">Sociální sítě</p>
+          <div class="footer__social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+              <span class="icon icon-instagram"></span>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="footer__social-link">
+              <span class="icon icon-youtube"></span>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" class="footer__social-link">
+              <span class="icon icon-tiktok"></span>
+            </a>
+            <a href="https://www.github.com" target="_blank" class="footer__social-link">
+              <span class="icon icon-github"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="footer__section footer__section--info">
+
+        <article class="footer__article footer__article--nav">
+          <nav class="footer__nav">
+            <a href="./topmista/index.html" class="footer__nav-link text text--bold text--p">Top místa kde...</a>
+            <a href="./conavstivit/index.html" class="footer__nav-link text text--bold text--p">Co navštívít </a>
+            <a href="./turistickepasti/index.html" class="footer__nav-link text text--bold text--p">Turistické
+              Pasti</a>
+          </nav>
+        </article>
+
+        <article class="footer__article footer__article--newsletter">
+          <p class="footer__newsletter-title text text--bold text--p">Odebírejte náš newsletter</p>
+          <div class="footer__newsletter-info">
+            <p class="footer__newsletter-text text text--p">Dozvíte se jako první o nových místech, která stojí za
+              návštěvu</p>
+            <a href="#form" class="footer__newsletter-button btn">Odebírat</a>
+          </div>
+        </article>
+
+        <address class="footer__address footer__address--info">
+          <p class="footer__copyright text text--p">© 2025 PoznejPrahu</p>
+          <p class="footer__credits text text--p">Vyrobeno s láskou a pivem</p>
+        </address>
+      </section>
     </div>
   </footer>
+
   <script type="module" src="/src/scripts/hamburger.js"></script>
   <script type="module" src="/src/scripts/main.js"></script>
   <script type="module" src="/src/scripts/animation.js"></script>
   <!-- <script type="module" src="%BASE_URL%src/scripts/main.js"></script> -->
+<!--
+OTAZKY
+- je dobry footer seciton a address tag?
+- jak moc se bere preflexovani
+- validita css a layers
+- link pres #
 
 
+-->
 </body>
 
 </html>
