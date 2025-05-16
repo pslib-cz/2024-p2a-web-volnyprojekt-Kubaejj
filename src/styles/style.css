@@ -235,7 +235,7 @@
   /* form*/
   .form {
     padding: 20px 40px;
-    max-width: 1160px;
+    max-width: 808px;
     margin: 2.5rem auto;
     display: flex;
     flex-direction: column;
@@ -413,7 +413,7 @@
     margin-bottom: 1em;
   }
 
-  .footer__address {
+  .footer__article--info {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -453,7 +453,7 @@
       padding: 1.25em 2em;
     }
 
-    .footer__address {
+    .footer__article--info {
       flex-direction: row;
       justify-content: space-between;
     }
