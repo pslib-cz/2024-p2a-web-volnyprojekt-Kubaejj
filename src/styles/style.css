@@ -636,9 +636,9 @@
     transform: translateY(-1em);
   }
 
-  .eateries__review-points-image {
-    width: 30px;
-    margin-right: 0.25em;
+  #eateries__review-footsteps {
+    font-size: 30px;
+    margin-right: 0.5em;
   }
 
   .eateries__reviews {

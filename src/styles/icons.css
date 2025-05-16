@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/icons/icomoon.eot?imu219');
-  src:  url('/icons/icomoon.eot?imu219#iefix') format('embedded-opentype'),
-    url('/icons/icomoon.ttf?imu219') format('truetype'),
-    url('/icons/icomoon.woff?imu219') format('woff'),
-    url('/icons/icomoon.svg?imu219#icomoon') format('svg');
+  src:  url('/icons/icomoon.eot?bnu9lo');
+  src:  url('/icons/icomoon.eot?bnu9lo#iefix') format('embedded-opentype'),
+    url('/icons/icomoon.ttf?bnu9lo') format('truetype'),
+    url('/icons/icomoon.woff?bnu9lo') format('woff'),
+    url('/icons/icomoon.svg?bnu9lo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,6 +36,9 @@
 }
 
 .icon-tiktok:before {
+  content: "\e901";
+}
+.icon-footstep:before {
   content: "\e900";
 }
 .icon-instagram:before {
