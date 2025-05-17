@@ -26,7 +26,12 @@
   html {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
   }
+  .lg-outer .lg-has-iframe .lg-media-cont {
+    -webkit-overflow-scrolling: touch;
+}
+
 
   #form {
     scroll-margin-top: 170px;
@@ -421,7 +426,7 @@
 
   .footer__copyright,
   .footer__credits {
-    opacity: 0.5;
+    opacity: 0.8;
     font-style: normal;
   }
 
@@ -639,6 +644,7 @@
   #eateries__review-footsteps {
     font-size: 30px;
     margin-right: 0.5em;
+    display: inline-block;
   }
 
   .eateries__reviews {
