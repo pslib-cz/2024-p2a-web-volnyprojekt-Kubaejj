@@ -28,9 +28,7 @@
     scroll-behavior: smooth;
       -webkit-text-size-adjust: 100%;
   }
-  .lg-outer .lg-has-iframe .lg-media-cont {
-    -webkit-overflow-scrolling: touch;
-}
+
 
 
   #form {
