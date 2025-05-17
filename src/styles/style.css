@@ -633,7 +633,10 @@
     padding: 1em;
     border-radius: 1em;
   }
-
+  .eateries__icon{
+    font-size: 30px;
+    margin-right: 0.5em;
+  }
 
   .eateries__review:hover {
     transform: translateY(-1em);
