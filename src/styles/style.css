@@ -1,9 +1,9 @@
-@layer reset, fonts, icons, layout, animation;
+@layer reset, fonts, icons, layout, hamburger, animation;
 
 @import url(./normalize.css) layer(reset);
 @import url(./fonts.css) layer(fonts);
 @import url(./icons.css) layer(icons);
-@import url(./hamburger.css);
+@import url(./hamburger.css) layer(hamburger);
 @import url(./animation.css) layer(animation);
 
 
@@ -128,7 +128,6 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    text-align: center;
   }
 
   .hero__title {
@@ -250,7 +249,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: .5rem;
   }
 
   .form__container--form {
@@ -279,7 +278,7 @@
   @media screen and (min-width: 840px) {
     .form__container--form {
       flex-direction: row;
-      gap: 20px;
+      gap: 1em;
     }
 
     .form__input {
@@ -467,7 +466,6 @@
   .main__hero,
   .traps {
     margin: 1.25rem;
-    text-align: center;
   }
 
   .traps {
@@ -483,7 +481,6 @@
     gap: 1.5em;
     max-width: 1248px;
     margin: 0 auto;
-    text-align: left;
   }
 
   .main__hero .hero__card,
@@ -526,7 +523,6 @@
     display: flex;
     flex-direction: column;
     border-radius: 1em;
-    overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
     align-self: flex-start;
@@ -545,7 +541,6 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: 1em;
   }
 
   .tips__img {
@@ -582,7 +577,6 @@
     gap: 2.5em;
     margin: 1em 1.25em;
     grid-template-columns: 1fr;
-    justify-content: center;
   }
 
   @media screen and (min-width: 840px) {
@@ -627,7 +621,7 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: 280px;
+    width: 248px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
     padding: 1em;
@@ -636,7 +630,12 @@
   }
   .eateries__icon{
     font-size: 30px;
-    margin-right: 0.5em;
+    margin-right: 0.25em;
+    color: var(--color);
+  }
+  .eateries__icon--blank{
+    opacity: 0.5;
+    
   }
 
   .eateries__review:hover {

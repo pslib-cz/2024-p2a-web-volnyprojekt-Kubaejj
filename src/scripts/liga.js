@@ -25,8 +25,9 @@
     var icons;
     if (!supportsProperty('fontFeatureSettings')) {
         icons = {
-            'tiktok': '&#xe901;',
-            'footstep': '&#xe900;',
+            'tiktok': '&#xe900;',
+            'udeleny bod': '&#xe901;',
+            'volny bod': '&#xe902;',
             'instagram': '&#xea92;',
             'youtube': '&#xea9d;',
             'github': '&#xeab0;',

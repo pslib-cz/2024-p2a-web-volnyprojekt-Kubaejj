@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/icons/icomoon.eot?bnu9lo');
-  src:  url('/icons/icomoon.eot?bnu9lo#iefix') format('embedded-opentype'),
-    url('/icons/icomoon.ttf?bnu9lo') format('truetype'),
-    url('/icons/icomoon.woff?bnu9lo') format('woff'),
-    url('/icons/icomoon.svg?bnu9lo#icomoon') format('svg');
+  src:  url('/icons/icomoon.eot?67tqno');
+  src:  url('/icons/icomoon.eot?67tqno#iefix') format('embedded-opentype'),
+    url('/icons/icomoon.ttf?67tqno') format('truetype'),
+    url('/icons/icomoon.woff?67tqno') format('woff'),
+    url('/icons/icomoon.svg?67tqno#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change icons */
   font-family: 'icomoon' !important;
-  /*speak: never;*/
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -36,10 +36,14 @@
 }
 
 .icon-tiktok:before {
+  content: "\e900";
+}
+.icon-udeleny-bod:before {
   content: "\e901";
 }
-.icon-footstep:before {
-  content: "\e900";
+.icon-volny-bod:before {
+  content: "\e902";
+ color: #f0f0f0;
 }
 .icon-instagram:before {
   content: "\ea92";
