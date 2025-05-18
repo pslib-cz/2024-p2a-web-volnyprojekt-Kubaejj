@@ -632,6 +632,7 @@
     transition: transform 0.3s ease;
     padding: 1em;
     border-radius: 1em;
+    align-self: flex-start;
   }
   .eateries__icon{
     font-size: 30px;
