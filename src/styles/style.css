@@ -465,8 +465,10 @@
   /*topmista*/
   .main__hero,
   .traps {
-    margin: 1.25rem;
+    margin: 1.25rem; 
+    text-align: center;  
   }
+ 
 
   .traps {
     margin: 2.5rem auto;
@@ -481,6 +483,7 @@
     gap: 1.5em;
     max-width: 1248px;
     margin: 0 auto;
+    text-align: left;
   }
 
   .main__hero .hero__card,
@@ -636,6 +639,10 @@
   .eateries__icon--blank{
     opacity: 0.5;
     
+  }
+  .eateries .eateries__image{
+    max-width: 650px;
+    margin: 0 auto;
   }
 
   .eateries__review:hover {
