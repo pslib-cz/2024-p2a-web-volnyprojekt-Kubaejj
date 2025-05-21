@@ -21,56 +21,53 @@
     --background: light-dark(var(--white, #F0F0F0), var(--gray, #3A3F45));
   }
 
-
-
   html {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: var(--color);
   }
 
 
 
-  #form {
-    scroll-margin-top: 170px;
-  }
 
+}
+
+@layer layout {
   .body {
     color: var(--color);
     background-color: var(--background);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
-
-    /* aby byl footer dloe*/
   }
 
   .main {
     flex-grow: 1;
   }
 
-  a {
-    text-decoration: none;
-    color: var(--color);
+  #form {
+    scroll-margin-top: 170px;
   }
-}
 
-@layer layout {
   .text--h1 {
     font-size: var(--h1);
-    font-weight: normal;
-
   }
 
   .text--h2 {
     font-size: var(--h2);
-    font-weight: normal;
   }
 
   .text--p {
     font-size: var(--p);
     font-family: Roboto, sans-serif;
+  }
+  .text--p, .text--h2, .text--h1{
     font-weight: normal;
   }
 
@@ -85,12 +82,12 @@
   .image--responsive {
     width: 100%;
     display: block;
-
+    margin: 0;
+    padding: 0;
   }
 
   .image {
     border-radius: 1rem;
-
   }
 
   .btn {
@@ -141,7 +138,6 @@
     margin: 1.25rem auto;
     color: var(--white, #F0F0F0);
     width: 350px;
-
   }
 
   .hero__section {
@@ -242,7 +238,6 @@
     display: flex;
     flex-direction: column;
     gap: .5em;
-
   }
 
   .form__container {
@@ -293,9 +288,7 @@
     color: var(--white);
     border-top: 1px solid var(--color);
     /*dark mode jen*/
-    border-bottom: 1px solid var(--color);
-    /*dark mode jen*/
-  }
+   }
 
   .icon {
     font-size: 3.125rem;
@@ -388,7 +381,6 @@
     color: var(--gray, #3A3F45);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
-
     transition: all 0.3s ease-in-out;
   }
 
@@ -440,7 +432,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-
     }
 
     .footer__newsletter-info {
@@ -448,8 +439,6 @@
       justify-content: space-between;
       align-items: center;
     }
-
-
 
     .footer__nav-link {
       padding: 1.25em 2em;
@@ -461,14 +450,12 @@
     }
   }
 
-
   /*topmista*/
   .main__hero,
   .traps {
-    margin: 1.25rem; 
-    text-align: center;  
+    margin: 1.25rem;
+    text-align: center;
   }
- 
 
   .traps {
     margin: 2.5rem auto;
@@ -504,7 +491,6 @@
     transition: all 0.3s ease-in-out;
   }
 
-
   /* tips */
 
   .tips {
@@ -519,7 +505,6 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: 2rem auto;
     max-width: 1215px;
-
   }
 
   .tips__card {
@@ -554,8 +539,6 @@
     display: block;
     border-radius: 0 0 1em 1em;
   }
-
-
 
   /*eateries*/
   .eateries {
@@ -607,7 +590,7 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 8px;
+    border-radius: .5rem;
   }
 
   .eateries__opening-item,
@@ -631,16 +614,18 @@
     border-radius: 1em;
     align-self: flex-start;
   }
-  .eateries__icon{
+
+  .eateries__icon {
     font-size: 30px;
     margin-right: 0.25em;
     color: var(--color);
   }
-  .eateries__icon--blank{
+
+  .eateries__icon--blank {
     opacity: 0.5;
-    
   }
-  .eateries .eateries__image{
+
+  .eateries .eateries__image {
     max-width: 650px;
     margin: 0 auto;
   }
@@ -654,7 +639,6 @@
     margin-right: 0.5em;
     display: inline-block;
   }
-
   .eateries__reviews {
     display: flex;
     flex-wrap: wrap;
