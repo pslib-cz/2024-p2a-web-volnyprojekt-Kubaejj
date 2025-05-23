@@ -83,7 +83,7 @@
 
     20%,
     80% {
-      filter: brightness(2) sepia(1) saturate(20000%) hue-rotate(-30deg);
+      filter:  saturate(100%) hue-rotate(-30deg);
       opacity: 1;
     }
 
@@ -117,7 +117,7 @@
 
     20%,
     80% {
-      filter: brightness(1.2) sepia(1) saturate(500%) hue-rotate(-30deg);
+      filter:  saturate(100%) hue-rotate(-30deg);
     }
 
     40%,
