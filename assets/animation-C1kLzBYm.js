@@ -1,0 +1,1 @@
+const o=document.getElementById("footsteps-container"),s=window.innerWidth/40;for(let e=0;e<s;e++){const t=document.createElement("img");t.src="%BASE_URL%img/animation/footstep.svg",t.className="footstep",t.style.setProperty("--i",e),t.alt="stopa",o.appendChild(t)}
