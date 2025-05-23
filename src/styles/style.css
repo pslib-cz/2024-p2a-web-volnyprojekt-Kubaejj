@@ -269,6 +269,9 @@
     font-family: Roboto, sans-serif;
     font-size: var(--p);
   }
+  .form__button {
+    border: none;
+  }
 
   @media screen and (min-width: 840px) {
     .form__container--form {
