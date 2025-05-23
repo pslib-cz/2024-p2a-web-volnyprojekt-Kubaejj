@@ -1,0 +1,1 @@
+const o=document.getElementById("footsteps-container"),n=window.innerWidth/40;for(let e=0;e<n;e++){const t=document.createElement("img");t.className="footstep",t.style.setProperty("--i",e),t.alt="stopa",o.appendChild(t)}
