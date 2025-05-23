@@ -58,6 +58,8 @@ import '../styles/fonts.css';
 import '../styles/icons.css';
 import '../styles/hamburger.css';*/
 import '../styles/style.css';
+
+/*
 import Clarity from '@microsoft/clarity';
 const projectId = "rnzf8513xv"
-Clarity.init(projectId);
+Clarity.init(projectId);*/

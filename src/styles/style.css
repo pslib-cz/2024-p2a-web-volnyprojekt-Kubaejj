@@ -113,9 +113,6 @@
   /* header */
   .header__row {
     padding: .5em 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--gray, #3A3F45);
   }
 
