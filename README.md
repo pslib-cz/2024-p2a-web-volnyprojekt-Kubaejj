@@ -22,4 +22,4 @@ Cestovatelský / městský průvodce zaměřený na autentická místa v Praze.
 ## Odkazy
 
 - 🔗 **Návrh ve Figmě:** [Zobrazit plátno ve Figmě](https://www.figma.com/design/9tF4btDCmMb14AIZB5dsj6/JezberaJakub?node-id=68-2&t=5ObrudRjSZB0jmft-1)
-- 🌐 **GitHub Pages:** [Zobrazit web](https://crispy-fortnight-9jkz7e6.pages.github.io/)
+- 🌐 **GitHub Pages:** [Zobrazit web](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-Kubaejj/)
