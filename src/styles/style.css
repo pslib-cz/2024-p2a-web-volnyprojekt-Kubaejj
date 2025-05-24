@@ -114,6 +114,9 @@
   .header__row {
     padding: .5em 1em;
     background-color: var(--gray, #3A3F45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   /*hero*/
